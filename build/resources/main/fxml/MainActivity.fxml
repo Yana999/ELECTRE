@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainStage">
+   <children>
+      <VBox layoutX="530.0" layoutY="40.0" prefHeight="500.0" prefWidth="255.0">
+         <children>
+            <Button fx:id="addAlteretivy" mnemonicParsing="false" onAction="#addRow" prefHeight="30.0" prefWidth="250" text= "Добавить альтернативу"/>
+            <Button fx:id="addCritery" mnemonicParsing="false" onAction="#addColumn" prefHeight="30.0" prefWidth="250.0" text= "Добаить критерий"/>
+            <Button fx:id="save" mnemonicParsing="false" onAction="#saveValues" prefHeight="30.0" prefWidth="250.0" text="Cохранить значения альтернатив" />
+            <Button fx:id="scale" mnemonicParsing="false" onAction="#saveScale" prefHeight="30.0" prefWidth="250.0" text="Сохранить значения длин шкал" />
+            <Button fx:id="weight" mnemonicParsing="false" onAction="#saveWeight" prefHeight="30.0" prefWidth="250.0" text="Сохранить значения весов" />
+            <Button fx:id="suggestion" mnemonicParsing="false" onAction="#saveSug" prefHeight="30.0" prefWidth="250.0" text="Сохранить значения гипотез" />
+            <Button fx:id="decision" mnemonicParsing="false" onAction="#solution" prefHeight="30.0" prefWidth="250.0" text="Решить!" />
+         </children>
+      </VBox>
+      <ScrollPane fx:id="scrollpane" layoutX="50.0" layoutY="40.0" prefHeight="500.0" prefWidth="480.0">
+        <content>
+          <AnchorPane fx:id="table" minHeight="0.0" minWidth="0.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
